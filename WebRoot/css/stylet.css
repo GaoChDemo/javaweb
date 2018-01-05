@@ -1,0 +1,559 @@
+body {
+    width: 1230px;
+}
+
+table {
+    float: right;
+    width: 100%;
+    max-width: 93%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #c2cfd6;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #c2cfd6;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#myTable th,
+#myTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#myTable tr {
+    /* 表格添加边框 */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+    /* 表头及鼠标移动过 tr 时添加背景 */
+    background-color: #f1f1f1;
+}
+
+
+
+
+#container {
+    width: 500px;
+    height: 820px;
+    margin: 0 auto;
+}
+
+div.search {
+    padding: 30px 0;
+}
+
+form {
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    height: 42px;
+    padding-left: 13px;
+}
+
+button {
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+.bar3 form {
+    width: 320px;
+    background: #7fccde;
+}
+
+.bar3 input,
+.bar3 button {
+    background: transparent;
+}
+
+.bar3 button {
+    top: 0;
+    right: 0;
+}
+
+.bar3 button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+#navigationMenu li {
+    list-style: none;
+    height: 39px;
+    padding: 2px;
+    width: 40px;
+}
+
+#navigationMenu span {
+    /* Container properties */
+    width: 0;
+    left: 38px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+
+    /* Text properties */
+    font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    line-height: 39px;
+
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+    /*-o-transition: 0.25s;*/
+    /* Future proofing (these do not work yet): */
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+#navigationMenu {
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+#navigationMenu a {
+    background: #C30;
+
+    height: 39px;
+    width: 38px;
+    display: block;
+    position: relative;
+}
+
+
+
+
+
+
+/* General hover styles */
+
+#navigationMenu a:hover span {
+    width: auto;
+    padding: 0 20px;
+    overflow: visible;
+}
+
+#navigationMenu a:hover {
+    text-decoration: none;
+
+    /* CSS outer glow with the box-shadow property */
+    -moz-box-shadow: 0 0 5px #9ddff5;
+    -webkit-box-shadow: 0 0 5px #9ddff5;
+    box-shadow: 0 0 5px #9ddff5;
+}
+
+
+
+/* Green Button */
+
+#navigationMenu .top {}
+
+#navigationMenu .top:hover {
+    background-position: 0 -39px;
+}
+
+#navigationMenu .top span {
+    background-color: #7fb1bf;
+    color: #3d4f0c;
+    text-shadow: 1px 1px 0 #99bf31;
+}
+
+
+#navigationMenu .home {}
+
+#navigationMenu .home:hover {
+    background-position: 0 -39px;
+}
+
+#navigationMenu .home span {
+    background-color: #7da315;
+    color: #3d4f0c;
+    text-shadow: 1px 1px 0 #99bf31;
+}
+
+
+
+/* Blue Button */
+
+#navigationMenu .about {}
+
+#navigationMenu .about:hover {
+    background-position: -38px -39px;
+}
+
+#navigationMenu .about span {
+    background-color: #1e8bb4;
+    color: #223a44;
+    text-shadow: 1px 1px 0 #44a8d0;
+}
+
+
+/* Orange Button */
+
+#navigationMenu .services {}
+
+#navigationMenu .services:hover {
+    background-position: -76px -39px;
+}
+
+#navigationMenu .services span {
+    background-color: #c86c1f;
+    color: #5a3517;
+    text-shadow: 1px 1px 0 #d28344;
+}
+
+
+
+/* Yellow Button */
+
+#navigationMenu .portfolio {}
+
+#navigationMenu .portfolio:hover {
+    background-position: -114px -39px;
+}
+
+#navigationMenu .portfolio span {
+    background-color: #d0a525;
+    color: #604e18;
+    text-shadow: 1px 1px 0 #d8b54b;
+}
+
+
+
+/* Purple Button */
+
+#navigationMenu .contact {}
+
+#navigationMenu .contact:hover {
+    background-position: -152px -39px;
+}
+
+#navigationMenu .contact span {
+    background-color: #af1e83;
+    color: #460f35;
+    text-shadow: 1px 1px 0 #d244a6;
+}
+
+
+
+/* The styles below are only needed for the demo page */
+
+#main {
+    margin: 40px auto;
+    position: relative;
+}
+
+#homebar {
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    background-color: #FFF;
+}
+
+.btn-two {
+    color: white;
+    padding: 15px 25px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom-color: rgba(0, 0, 0, 0.34);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+    0 2px 0 -1px rgba(0, 0, 0, 0.13),
+    0 3px 0 -1px rgba(0, 0, 0, 0.08),
+    0 3px 13px -1px rgba(0, 0, 0, 0.21);
+}
+
+.btn-two:active {
+    top: 1px;
+    border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+    position: relative;
+}
+
+
+
+/* Here you can change the button sizes */
+
+.btn.large,
+.btn-two.large,
+.btn-effect.large {
+    padding: 20px 40px;
+    font-size: 22px;
+}
+
+.btn.small,
+.btn-two.small,
+.btn-gradient.small,
+.btn-effect.small {
+    padding: 8px 18px;
+    font-size: 14px;
+}
+
+.btn.mini,
+.btn-two.mini,
+.btn-gradient.mini,
+.btn-effect.mini {
+    padding: 4px 12px;
+    font-size: 12px;
+}
+
+.btn.block,
+.btn-two.block,
+.btn-gradient.block,
+.btn-effect.block {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.btn-gradient.large {
+    padding: 15px 45px;
+    font-size: 22px;
+}
+
+
+
+/* Colors for .btn and .btn-two */
+
+.btn.blue,
+.btn-two.blue {
+    background-color: #7fb1bf;
+}
+
+.btn.green,
+.btn-two.green {
+    background-color: #9abf7f;
+}
+
+.btn.red,
+.btn-two.red {
+    background-color: #fa5a5a;
+}
+
+.btn.purple,
+.btn-two.purple {
+    background-color: #cb99c5;
+}
+
+.btn.cyan,
+.btn-two.cyan {
+    background-color: #7fccde;
+}
+
+.btn.yellow,
+.btn-two.yellow {
+    background-color: #f0d264;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.Add {
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.tableName {
+    float: left;
+    padding-left: 90px;
+    padding-bottom: 10px;
+}
+
+.tableName h3 {
+    font-size: 1.4em;
+}
+
+.pname {
+    float: left;
+    padding-left: 90px;
+}
+
+.pname h1 {
+    font-size: 2.3em;
+}
+
+#popupcontentAdd {
+    position: absolute;
+    visibility: hidden;
+    background: #e8e8e8;
+    height: 500px;
+}
+
+#popupcontentModification {
+    position: absolute;
+    visibility: hidden;
+    background: #e8e8e8;
+    height: 500px;
+}
+
+.button {
+    width: 100px;
+    background: #3399cc;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+}
+
+.button:hover {
+    background: #2288bb;
+}
+
+#add {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 2%;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+}
+
+
+#Modification {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 2%;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+}
+
+#triangle {
+    width: 0;
+    border-top: 12x solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #9abf7f;
+    border-left: 12px solid transparent;
+    margin: 0 auto;
+}
+
+#triangle1 {
+    width: 0;
+    border-top: 12x solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #cb99c5;
+    border-left: 12px solid transparent;
+    margin: 0 auto;
+}
+
+
+.add .triangle form {
+    background: #f0f0f0;
+    padding: 6% 4%;
+}
+.add .triangle form span{
+    float: right;
+}
+
+.Modification .triangle form {
+    background: #f0f0f0;
+    padding: 6% 4%;
+}
+.inputStyle {
+    height: 0px;
+    width: 45%;
+    background: #fff;
+
+    border: 1px solid #ccc;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 95%;
+    color: #555;
+    float: right;
+}
+
+.selectStyle {
+    height: 26px;
+    width: 54%;
+    background: #fff;
+
+    border: 1px solid #ccc;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    float: right;
+}
+
+.submitStyle {
+    width: 100%;
+    background: #9abf7f;
+    border: 0;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+}
+
+.submitStyle1 {
+    width: 100%;
+    background: #cb99c5;
+    border: 0;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+}
+
+.submitStyle:hover {
+    background: #2288bb;
+}

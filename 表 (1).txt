@@ -1,0 +1,63 @@
+账号管理
+create table iuser(
+	username char(30) primary key,   
+	userpasswd char(15),      
+	userpower char(15),	
+	usermoney char(30)
+）
+   用户名（账号）
+ 密码 
+0:普通用户 1：管理员用户
+金额
+
+
+
+收支存取表：
+create table pay(
+	payid char(15) primary key, 
+	username char(30),     
+	paytime char(30),             
+	paytype char(5)，		
+	income_money char(30) 
+）
+   存单编号 time 函数生成
+ 用户名（账号）
+收入时间 日期类型选择 年月日
+ 0：存  1：取款 2：缴纳水电费 3：缴纳电话费
+  金额
+
+
+<!--收支表-->
+create table pay(
+	payid char(15) primary key,
+	username char(30),
+	paytime char(30),
+	paytype char(5),
+	income_money char(30),
+	foreign key(username) references iuser(username)
+）;
+<!--用户信息-->
+create table iuser(
+	username char(30) primary key,      
+	userpasswd char(15),      
+	userpower char(15)，     	
+	usermoney char(30)
+）;
+
+
+
+
+
+INSERT INTO iuser(username，userpasswd，userpower，usermoney)
+  VALUES ('01', '11', '0', '111');
+INSERT INTO iuser(username，userpasswd，userpower，usermoney)
+  VALUES ('02', '22', '0', '222');
+INSERT INTO iuser(username，userpasswd，userpower，usermoney)
+  VALUES ('03', '33', '1', '333');
+INSERT INTO iuser(username，userpasswd，userpower，usermoney)
+  VALUES ('admin', '123', '1', '0');
+
+
+INSERT INTO pay(payid,username,paytime,paytype,income_money)
+  VALUES ('1234556', '01','2005-1-15', '0','123.12');
+
